@@ -1,0 +1,64 @@
+{
+  "date": "20250908",
+  "total_stocks": 2195,
+  "twse_stocks": 1055,
+  "tpex_stocks": 1140,
+  "sample_stocks": [
+    {
+      "stock_id": "1240",
+      "name": "茂生農經",
+      "market": "TPEx"
+    },
+    {
+      "stock_id": "1259",
+      "name": "安心",
+      "market": "TPEx"
+    },
+    {
+      "stock_id": "1264",
+      "name": "德麥",
+      "market": "TPEx"
+    },
+    {
+      "stock_id": "1268",
+      "name": "漢來美食",
+      "market": "TPEx"
+    },
+    {
+      "stock_id": "1294",
+      "name": "漢田生技",
+      "market": "TPEx"
+    },
+    {
+      "stock_id": "1295",
+      "name": "生合",
+      "market": "TPEx"
+    },
+    {
+      "stock_id": "1336",
+      "name": "台翰",
+      "market": "TPEx"
+    },
+    {
+      "stock_id": "1565",
+      "name": "精華",
+      "market": "TPEx"
+    },
+    {
+      "stock_id": "1569",
+      "name": "濱川",
+      "market": "TPEx"
+    },
+    {
+      "stock_id": "1570",
+      "name": "力肯",
+      "market": "TPEx"
+    }
+  ],
+  "data_quality": {
+    "expected_twse_range": "900-1200",
+    "expected_tpex_range": "700-1000",
+    "twse_status": "正常",
+    "tpex_status": "異常"
+  }
+}
