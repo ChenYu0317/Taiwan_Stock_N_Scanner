@@ -139,7 +139,7 @@
 ### 4.8 參數預設（可於前端調整）
 
 * `lookback_bars = 200`
-* `min_leg_pct = 0.10` **或** `atr_k = 3.0`（二擇一）
+* `min_leg_pct = 0.04` **或** `atr_k = 3.0`（二擇一）
 * `retr_min = 0.30`、`retr_max = 0.70`
 * `c_tol = 0.00`（C 不可破 A；可設 0.5% 彈性）
 * `ema_len = 5`、`rsi_len = 14`、`vol_ma_len = 20`
@@ -263,7 +263,7 @@ if A and B and C:
 ## 12) 參數建議（預設值，待你改）
 
 * `lookback_bars = 200`
-* `min_leg_pct = 0.10`（或 `atr_k = 3.0` 擇一）
+* `min_leg_pct = 0.04`（或 `atr_k = 3.0` 擇一）
 * `retracement_min = 0.382`、`retracement_max = 0.618`
 * `confirm_break_b = True`（以「收盤突破」為準）
 * `volume_filter = True, k = 1.5`
@@ -284,7 +284,7 @@ if A and B and C:
 {
   "params": {
     "lookback_bars": 200,
-    "min_leg_pct": 0.10,
+    "min_leg_pct": 0.04,
     "retr": [0.30, 0.70],
     "ema_len": 5,
     "rsi_len": 14,

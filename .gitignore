@@ -1,8 +1,9 @@
-# Python
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
-*.so
+
+# Distribution / packaging
 .Python
 build/
 develop-eggs/
@@ -55,19 +56,6 @@ ipython_config.py
 # pyenv
 .python-version
 
-# pipenv
-Pipfile.lock
-
-# PEP 582
-__pypackages__/
-
-# Celery stuff
-celerybeat-schedule
-celerybeat.pid
-
-# SageMath parsed files
-*.sage.py
-
 # Environments
 .env
 .venv
@@ -77,37 +65,6 @@ ENV/
 env.bak/
 venv.bak/
 
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
-/site
-
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
-# Pyre type checker
-.pyre/
-
-# macOS
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Windows
-Thumbs.db
-Thumbs.db:encryptable
-ehthumbs.db
-ehthumbs_vista.db
-*.tmp
-*.temp
-
 # IDE
 .vscode/
 .idea/
@@ -115,14 +72,19 @@ ehthumbs_vista.db
 *.swo
 *~
 
-# Database files
-*.db-shm
-*.db-wal
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
-# Log files
-*.log
-
-# Temporary files
+# Project specific
+logs/*.log
+data/cache/*
+data/raw/*
+!data/cleaned/taiwan_stocks_cleaned.db
 *.tmp
-*.temp
-temp_*
+*.bak

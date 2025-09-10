@@ -101,7 +101,7 @@ Request: {
   "date": "2025-01-01",
   "params": {
     "lookback_bars": 200,
-    "min_leg_pct": 0.10,
+    "min_leg_pct": 0.04,
     "retr_min": 0.30, "retr_max": 0.70,
     "rsi_threshold": 55,
     "vol_threshold": 1.5
@@ -181,7 +181,7 @@ Response 200: {
 - **C 點**：B 後的回撤低點 - 使用當日最低價（前復權）
 
 **成立條件**：
-1. `rise_pct = (B_high - A_low) / A_low ≥ min_leg_pct`
+1. `rise_pct = (B_high - A_low) / A_low ≥ min_leg_pct` (預設4%)
 2. `retr_pct = (B_high - C_low) / (B_high - A_low) ∈ [retr_min, retr_max]`
 3. `C_low ≥ A_low × (1 - c_tol)`
 
@@ -204,7 +204,7 @@ Response 200: {
 ```
 # 形態識別參數
 lookback_bars = 200          # 回望天數（新股最低 80 天）
-min_leg_pct = 0.10          # 最小上漲幅度 10%
+min_leg_pct = 0.04          # 最小上漲幅度 4%
 retr_min = 0.30             # 最小回撤比例 30%
 retr_max = 0.70             # 最大回撤比例 70%
 c_tol = 0.00                # C 點容差（不可破 A）
@@ -505,7 +505,7 @@ metrics = {
 - 回撤比例範圍：[0.2,0.8] → [0.3,0.7] → [0.4,0.6] 對比測試
 - RSI 閾值：50 vs 55 vs 60 三組對比
 - 量能倍數：1.0 vs 1.5 vs 2.0 三組對比
-- 最小漲幅：5% vs 10% vs 15% 三組對比
+- 最小漲幅：4% vs 5% vs 8% 三組對比
 
 **前瞻偏差防範**：
 - 嚴格時序：T-1 日收盤前計算信號，T 日收盤確認觸發，T+1 日執行
